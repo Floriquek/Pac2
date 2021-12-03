@@ -133,6 +133,11 @@ root@kek:/home/wrenchie/Pac2/instance# terraform apply -var-file=../packer_terra
 ...once the instance is created, check if you can connect to public IP with your pem key (yeah, you should have a pem key created, just like in Pac1)
 
 ```
+ root@kek:/home/wrenchie/Pac2/instance#  terraform output | awk {'print $3'} | sed 's/"//g'
+ 3.133.139.186
+```
+
+```
 root@kek:/home/wrenchie/Pac2/instance# ssh -i ~/.aws/pems/key-pair-example.pem ubuntu@3.133.139.186 'uname -a'
 [ ...snip ... ]
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
