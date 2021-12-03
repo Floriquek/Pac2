@@ -15,7 +15,7 @@ root@kek:/home/wrenchie/Pac2# tree .
 ├── instance
 │   ├── instance.tf
 │   ├── provider.tf
-│   └── variables.tf
+│   └── output.tf
 ├── networking
 │   ├── internet_gateway.tf
 │   ├── output.tf
