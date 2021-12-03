@@ -1,5 +1,5 @@
 module "networking" { 
-	source="../vpc"
+	source="../networking"
 }
 
 variable "ami_host" {
