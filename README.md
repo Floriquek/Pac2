@@ -105,7 +105,8 @@ it might be a nice idea to destroy the resources for networking (unless you want
 root@kek:/home/wrenchie/Pac2/networking# terraform destroy
 [ ... snip ... ]
 ```
-Of course, just like in Pac1, we need to build our environment with the help of amihost.tfvars:
+
+Anywayz, just like in Pac1, we need to build our environment with the help of amihost.tfvars, when located in "instance" folder:
 
 ```
 root@kek:/home/wrenchie/Pac2/instance# terraform init
